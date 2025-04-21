@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - ShopNest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <style>
+        body {
+            background-color: #f4f5f7;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        h1, h3 {
+            color: #4b0082;
+        }
+
+        footer {
+            background-color: #4b0082;
+            color: white;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">ShopNest</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="data-visualization.html">Visualizations</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="manage.html">Manage</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container py-5 mt-5">
+        <h1 class="mb-4 text-center">About Us</h1>
+        <p class="text-center">Meet the creators behind ShopNest!</p>
+
+        <!-- Team Members Section -->
+        <div class="row text-center">
+            <div class="col-md-3 mb-4">
+                <h4>Manvitha Challagondla</h4>
+                <p><strong>Role:</strong> Index & Data Visualization</p>
+                <p><strong>Contributions:</strong> Built the homepage and charts page using Chart.js and Bootstrap. Helped define the project theme and data mockups for analytics.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h4>Shivani Adepu</h4>
+                <p><strong>Role:</strong> Create & Read Pages</p>
+                <p><strong>Contributions:</strong> Developed product creation and table view pages. Ensured layout consistency, form validation, and Bootstrap responsiveness.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h4>Bala Pranavi Gollamari</h4>
+                <p><strong>Role:</strong> Manage & Delete Pages</p>
+                <p><strong>Contributions:</strong> Styled the CRUD menu with icon buttons. Implemented delete confirmation and form styling with Bootstrap classes.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h4>Bhargavi Gugulla</h4>
+                <p><strong>Role:</strong> Update & About Page</p>
+                <p><strong>Contributions:</strong> Created update form layout, adjusted height/responsiveness, and styled the About page with team info and GitHub link.</p>
+            </div>
+        </div>
+
+        <!-- Logical Data Model -->
+        <div class="mt-5">
+            <h3>Logical Data Model</h3>
+            <img src="images/datamodel.png" alt="Logical Data Model" class="img-fluid border border-secondary rounded mb-3" />
+            <p>This diagram outlines our product inventory relationships:</p>
+            <ul>
+                <li><strong>Categories</strong> to <strong>Products</strong> — One-to-Many</li>
+                <li><strong>Products</strong> to <strong>Sales Records</strong> — One-to-Many</li>
+            </ul>
+        </div>
+
+        <!-- GitHub Link -->
+        <div class="mt-5">
+            <h3>GitHub Repository</h3>
+            <p>Check out our project on GitHub:</p>
+            <a href="https://github.com/Manvitha1510/ShopNest" target="_blank" class="btn btn-primary">View on GitHub</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center mt-auto">
+        <p class="mb-0">&copy; 2025 ShopNest Team</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
